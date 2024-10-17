@@ -42,6 +42,7 @@ title = f"Iterations (Epochs) = {iterations}, Learning Rate = {learning_rate}, b
 fig = px.line(x=x_poly, y=y_poly, title=title, template='seaborn', labels={"x":"parameter b","y":"Loss function"})
 fig.add_trace(go.Scatter(x=x_path, y=y_path, mode='lines+markers', marker=dict(color='#A80000'), name='Gradient Descent Path'))
 fig.update_layout(
+    autosize=False,
     width=1200,
     height=500)
 # Display the plot in Streamlit
