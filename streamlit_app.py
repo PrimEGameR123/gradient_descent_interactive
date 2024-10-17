@@ -39,7 +39,7 @@ y_path = cost_function(x_path)
 # Plot the cost function and gradient descent steps
 title = f"Iterations (Epochs) = {iterations}, Learning Rate = {learning_rate}, b_start = {b_start}"
 
-fig = px.line(x=x_poly, y=y_poly, title=title, template='seaborn', labels={"x":"parameter b","y":"Loss function"})
+fig = px.line(x=x_poly, y=y_poly, title=title, template='seaborn', labels={"x":"parameter_b","y":"Loss function"})
 fig.add_trace(go.Scatter(x=x_path, y=y_path, mode='lines+markers', marker=dict(color='#A80000'), name='Gradient Descent Path'))
 fig.update_layout(
     autosize=False,
